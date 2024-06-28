@@ -1,8 +1,8 @@
-import  { useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import './App.css'
 
-function App() {
-	const videoRef = useRef(null)
+const App: React.FC = () => {
+	const videoRef = useRef<HTMLVideoElement | null>(null)
 
 	useEffect(() => {
 		async function getCameraStream() {
